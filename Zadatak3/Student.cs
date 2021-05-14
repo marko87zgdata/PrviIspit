@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadatak3
+{
+    class Student: Person
+    {
+        public short AcademicYear { get; set; }
+        public int[] Ocjene { get; set; }
+
+        public Student(int id, string name, short academicYear)
+            : base(id, name)
+        {
+            AcademicYear = academicYear;
+            Ocjene = new int[5];
+        }
+
+        public override string ToString()
+        {
+            return "Id: " + Id + ", Name: " + Name + ", Year: " + AcademicYear + ", Ocjene: " + Ocjene.Length;
+        }
+
+        public override double GetGrade()
+        {
+            int suma = 0;
+            foreach (var item in Ocjene)
+            {
+                suma += item;
+            }
+            return (double)suma/5;
+        }
+
+        public override bool IsOutstanding()
+        {
+            if (GetGrade() > 4.5)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+
+    }
+}
