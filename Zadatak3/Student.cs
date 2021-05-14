@@ -23,8 +23,7 @@ namespace Zadatak3
             string povratniString = "Id: " + Id + ", Name: " + Name + ", Year: " + AcademicYear + ", Ocjene: "; 
             foreach (var item in Ocjene)
             {
-                    povratniString += item;
-                    povratniString += " ";
+                povratniString += item + " ";
             }
             return povratniString;
         }
