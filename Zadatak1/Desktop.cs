@@ -18,8 +18,8 @@ namespace Zadatak1
 
         public override string ToString()
         {
-            return "Model: " + Model + ", " + "Manufacturer: " + Manufacturer + ", " + "OperatingSystem: " 
-                + OperatingSystem + ", " + CaseHeight + "cm";
+            return "Model: " + Model + ", Manufacturer: " + Manufacturer + ", OperatingSystem: " 
+                + OperatingSystem + ", Visina: " + CaseHeight + "cm";
         }
     }
 }

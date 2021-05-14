@@ -18,8 +18,8 @@ namespace Zadatak1
         }
         public override string ToString()
         {
-            return "Model: " + Model + ", " + "Manufacturer: " + Manufacturer + ", " + "OperatingSystem: " + 
-                OperatingSystem + ", " + BatteryCapacity + "mAh, " + Weight + "kg";
+            return "Model: " + Model + ", Manufacturer: " + Manufacturer + ", OperatingSystem: " + 
+                OperatingSystem + ", Baterija: " + BatteryCapacity + "mAh, Tezina: " + Weight + "kg";
         }
     }
 }
