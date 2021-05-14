@@ -36,7 +36,7 @@ namespace Zadatak3
             {
                 suma += item;
             }
-            return (double)suma/5;
+            return (double)suma/Ocjene.Length;
         }
 
         public override bool IsOutstanding()
