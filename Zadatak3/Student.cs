@@ -20,7 +20,13 @@ namespace Zadatak3
 
         public override string ToString()
         {
-            return "Id: " + Id + ", Name: " + Name + ", Year: " + AcademicYear + ", Ocjene: " + Ocjene.Length;
+            string povratniString = "Id: " + Id + ", Name: " + Name + ", Year: " + AcademicYear + ", Ocjene: "; 
+            foreach (var item in Ocjene)
+            {
+                    povratniString += item;
+                    povratniString += " ";
+            }
+            return povratniString;
         }
 
         public override double GetGrade()
